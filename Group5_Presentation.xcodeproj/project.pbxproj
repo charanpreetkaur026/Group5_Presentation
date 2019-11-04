@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		9BA3B4A82370E1000043C694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3B4A72370E1000043C694 /* AppDelegate.swift */; };
 		9BA3B4AA2370E1000043C694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3B4A92370E1000043C694 /* SceneDelegate.swift */; };
-		9BA3B4AC2370E1000043C694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3B4AB2370E1000043C694 /* ViewController.swift */; };
+		9BA3B4AC2370E1000043C694 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3B4AB2370E1000043C694 /* HomeViewController.swift */; };
 		9BA3B4AF2370E1000043C694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA3B4AD2370E1000043C694 /* Main.storyboard */; };
 		9BA3B4B12370E1010043C694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA3B4B02370E1010043C694 /* Assets.xcassets */; };
 		9BA3B4B42370E1010043C694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA3B4B22370E1010043C694 /* LaunchScreen.storyboard */; };
+		9BA3B4BC2370E8F40043C694 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3B4BB2370E8F40043C694 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9BA3B4A42370E1000043C694 /* Group5_Presentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Group5_Presentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA3B4A72370E1000043C694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BA3B4A92370E1000043C694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BA3B4AB2370E1000043C694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BA3B4AB2370E1000043C694 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9BA3B4AE2370E1000043C694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BA3B4B02370E1010043C694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BA3B4B32370E1010043C694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BA3B4B52370E1010043C694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA3B4BB2370E8F40043C694 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				9BA3B4A72370E1000043C694 /* AppDelegate.swift */,
 				9BA3B4A92370E1000043C694 /* SceneDelegate.swift */,
-				9BA3B4AB2370E1000043C694 /* ViewController.swift */,
+				9BA3B4AB2370E1000043C694 /* HomeViewController.swift */,
 				9BA3B4AD2370E1000043C694 /* Main.storyboard */,
 				9BA3B4B02370E1010043C694 /* Assets.xcassets */,
 				9BA3B4B22370E1010043C694 /* LaunchScreen.storyboard */,
 				9BA3B4B52370E1010043C694 /* Info.plist */,
+				9BA3B4BB2370E8F40043C694 /* LoginViewController.swift */,
 			);
 			path = Group5_Presentation;
 			sourceTree = "<group>";
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BA3B4AC2370E1000043C694 /* ViewController.swift in Sources */,
+				9BA3B4BC2370E8F40043C694 /* LoginViewController.swift in Sources */,
+				9BA3B4AC2370E1000043C694 /* HomeViewController.swift in Sources */,
 				9BA3B4A82370E1000043C694 /* AppDelegate.swift in Sources */,
 				9BA3B4AA2370E1000043C694 /* SceneDelegate.swift in Sources */,
 			);
