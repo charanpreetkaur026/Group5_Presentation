@@ -11,8 +11,8 @@ class LoginViewController: UIViewController {
           super.viewDidLoad()
         view.backgroundColor = UIColor.purple
            print(" LoginViewController viewDidLoad")
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil) 
+        //let notificationCenter = NotificationCenter.default
+        //notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil) 
        // specifing the app active status  // not worked
 //        switch UIApplication.shared.applicationState {
 //          case .active:
@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
 //        }
       }
     @objc func appMovedToBackground() {
-        print("LoginViewController:- App moved to background!")
+        print("LoginViewController:- App moved to background! (willResignActiveNotification)")
     }  // for notificationCenter
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)

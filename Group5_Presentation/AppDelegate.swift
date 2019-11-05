@@ -41,6 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        // print("AppDelegate:- willFinishLaunchingWithOption function called")
     }
 
+    
     func applicationDidEnterBackground(_ application: UIApplication) {
          NSLog("applicationDidEnterBackground");
         print("AppDelegate:- applicationDidEnterBackground called ")
