@@ -1,6 +1,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+ @IBOutlet weak var textField_Date: UITextField!
+ var datePicker : UIDatePicker!
  
     override func loadView() {
          super.loadView()
@@ -26,7 +28,7 @@ class HomeViewController: UIViewController {
         notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)   //not worked
     }
     @objc func appMovedToBackground() {
-        print("App moved to background!")
+        print("HomeViewController:- App moved to background!")
     }  // for notificationCenter
     override func viewWillAppear(_ animated: Bool){
     super.viewWillAppear(animated)

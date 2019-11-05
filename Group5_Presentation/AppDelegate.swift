@@ -2,7 +2,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+   var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool        // LaunchOptionKey specifies the reason of launching app
     {
         print("AppDelegate:- didFinishLaunchingWithOption function called")
@@ -55,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSLog("applicationWillTerminate");
         print("AppDelegate:- applicationWillTerminate")
     }
+
    
 }
 
