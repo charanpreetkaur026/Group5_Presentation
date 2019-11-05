@@ -9,18 +9,40 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    override func loadView(){
-        super.loadView()
-        print(" HomeViewController LoadView")
-        
-    }
+  
+   // var vview: UIView!
+    
+    override func loadView() {
+         super.loadView()
+           // only called by default when UI is not created with storyBoard
+           print(" HomeViewController LoadView")
+           
+       }
+    /* did same as loadView */
+    
+//    override func loadViewIfNeeded() {
+//      super.loadViewIfNeeded()
+//        // only called by default when UI is not created with storyBoard
+//        print(" HomeViewController LoadView")
+//
+//    }
+// 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
          print(" HomeViewController viewDidLoad")
+        let homeViewController = HomeViewController()
+        if(homeViewController.isViewLoaded)
+           {
+           print("view Loaded")
+           }
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
     }
-   override func viewWillAppear(_ animated: Bool){
+    @objc func appMovedToBackground() {
+        print("App moved to background!")
+    }
+    override func viewWillAppear(_ animated: Bool){
     super.viewWillAppear(animated)
      print(" HomeViewController viewWillAppear")
         

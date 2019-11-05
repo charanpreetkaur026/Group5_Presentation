@@ -14,8 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
+   // LaunchOptionKey specifies the reason of launching app
     {
-        print("AppDelegate:- didFinishLaunchingWithOption function calledk")
+        print("AppDelegate:- didFinishLaunchingWithOption function called")
         // Override point for customization after application launch.
         return true
     }
@@ -34,14 +35,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-//    func applicationDidBecomeActive(_ application: UIApplication) {
-//        print("AppDelegate:- applicationDidBecomeActive function called")
-//    }
-
-    func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
-        print(" jbcjdnsc ")
+    func applicationDidBecomeActive(_ application: UIApplication) {
+          NSLog("applicationDidBecomeActive");
+        print("AppDelegate:- applicationDidBecomeActive function called")
     }
-    
+    func applicationWillResignActive(_ application: UIApplication)
+    {
 
+          NSLog("applicationWillResignActive");
+
+        
+           print("AppDelegate:- applicationWillResignActive")
+       }
+    func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
+        print(" AppDelegate:-  applicationDidReceiveMemoryWarning")
+    }
+    // willFinishLaunchingWithOptions
+    func application(_ application: UIApplication,
+                     willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool{
+        return true
+       // print("AppDelegate:- willFinishLaunchingWithOption function called")
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+         NSLog("applicationDidEnterBackground");
+        print("AppDelegate:- applicationDidEnterBackground called ")
+    }
+    //) willFinishLaunchingWithOptions:-> Bool
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+         NSLog("applicationWillEnterForeground");
+        print("AppDelegate:- applicationWillEnterForeground")
+    }
+    func applicationWillTerminate(_ application: UIApplication) {
+        NSLog("applicationWillTerminate");
+        print("AppDelegate:- applicationWillTerminate")
+    }
+   
 }
 

@@ -23,6 +23,20 @@ class LoginViewController: UIViewController {
           super.viewDidLoad()
           // Do any additional setup after loading the view.
            print(" LoginViewController viewDidLoad")
+       // specifing the app active status  // not worked
+        switch UIApplication.shared.applicationState {
+          case .active:
+             print("App is Active. Next number = ")
+            //resultsLabel.text = resultsMessage
+          case .background:
+            print("App is backgrounded. Next number = ")
+            print("Background time remaining = " +
+            "\(UIApplication.shared.backgroundTimeRemaining) seconds")
+          case .inactive:
+            break
+        @unknown default:
+            fatalError()
+        }
       }
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
