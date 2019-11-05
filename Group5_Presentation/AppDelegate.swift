@@ -1,32 +1,19 @@
-//
-//  AppDelegate.swift
-//  Group5_Presentation
-//
-//  Created by MacStudent on 2019-11-04.
-//  Copyright © 2019 MacStudent. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
-   // LaunchOptionKey specifies the reason of launching app
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool        // LaunchOptionKey specifies the reason of launching app
     {
         print("AppDelegate:- didFinishLaunchingWithOption function called")
         // Override point for customization after application launch.
         return true
     }
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
-        
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
@@ -41,12 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func applicationWillResignActive(_ application: UIApplication)
     {
-
-          NSLog("applicationWillResignActive");
-
-        
-           print("AppDelegate:- applicationWillResignActive")
-       }
+        NSLog("applicationWillResignActive");
+        print("AppDelegate:- applicationWillResignActive")
+    }
     func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
         print(" AppDelegate:-  applicationDidReceiveMemoryWarning")
     }
