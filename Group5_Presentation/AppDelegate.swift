@@ -38,6 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        print("AppDelegate:- applicationDidBecomeActive function called")
 //    }
 
+    func applicationDidReceiveMemoryWarning(_ application: UIApplication) {
+        print(" jbcjdnsc ")
+    }
     
 
 }
