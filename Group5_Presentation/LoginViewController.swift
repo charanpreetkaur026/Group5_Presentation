@@ -12,32 +12,36 @@ class LoginViewController: UIViewController {
 
       override func loadView(){
           super.loadView()
-          print(" HomeViewController LoadView")
+          print(" LoginViewController LoadView")
           
       }
-      override func viewDidLoad() {
+//    @IBAction func btnNextScreen(_ sender: Any) {
+//        let homeVC = HomeViewController()
+//        navigationController?.pushViewController(homeVC, animated: true)
+//    }
+    override func viewDidLoad() {
           super.viewDidLoad()
           // Do any additional setup after loading the view.
-           print(" HomeViewController viewDidLoad")
+           print(" LoginViewController viewDidLoad")
       }
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
-       print(" HomeViewController viewWillAppear")
+       print(" LoginViewController viewWillAppear")
           
       }
       override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
-           print(" HomeViewController viewDidAppear")
+           print(" LoginViewController viewDidAppear")
           
       }
       override func viewWillDisappear(_ animated: Bool){
           super.viewWillDisappear(animated)
-           print(" HomeViewController willDisappear")
+           print(" LoginViewController willDisappear")
           
       }
       override func viewDidDisappear(_ animated: Bool){
           super.viewDidDisappear(animated)
-           print(" HomeViewController viewDidDisappear")
+           print(" LoginViewController viewDidDisappear")
           
       }
 
